@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Project</title>
+</head>
+<body style="background-color: lightblue">
+	<center>
+		<style>
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+</style>
+<body>
+
+<div class="content">
+  <!-- Page content -->
+</div>
+
+</body>
+		<table>
+		<tbody>
+			<tr>
+				<th><h2>LENGTH CONVERTER</h2>
+				<p>
+					<input type="text" id="mm">
+				</p>
+				<input type="button" class="btn btn-primary" onclick="mmCM()" value="Convert To CM">
+				<input type="button" class="btn btn-primary" onclick="mmM()" value="Convert To M">
+				<input type="button" class="btn btn-primary" onclick="mmKM()" value="Convert To KM">
+			    </th>
+			</tr>
+		</tbody>
+	</table>
+
+		<script type="text/javascript">	
+				function mmCM(){
+					var x, y
+					x = (document.getElementById('mm').value);
+					y = 10;		
+					alert(x / y);
+				}
+				function mmM(){
+					var x, y
+					x = (document.getElementById('mm').value);
+					y = 1000;		
+					alert(x / y);
+				}
+
+				function mmKM(){
+					var x, y 
+					x = (document.getElementById('mm').value);
+					y = 1000000;		
+					alert(x / y);
+				}
+		</script>
+</center>
+</body>
+</html>
